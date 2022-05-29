@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    {% load static %}
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <title>Document</title>
 </head>
 <body>
     {% for familiar in familiares %}
-    <div class="familiarCard">
-        <h3>{{familiar.name}}</h3>
-        <ul class="familiarCard--datos">
-            <li>{{familiar.age}}</li>
-            <li>{{familiar.date}}</li>
-        </ul>
-    </div>
+     <div class="familiarCard">
+         <h3>{{familiar.name}}</h3>
+         <ul class="familiarCard--datos">
+             <li>Edad: {{familiar.age}}</li>
+             <li>Fecha de nacimiento: {{familiar.date}}</li>
+         </ul>
+     </div>
     {% endfor %}
 </body>
 </html>

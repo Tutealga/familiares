@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.familiarCard {
+    border-radius: 0.5rem;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    padding: 32px;
+    text-align: center;
+}

@@ -5,5 +5,5 @@ from familiares.views import familiares
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('familiares/', familiares, name = 'familiares'),
+    path('', familiares, name = 'index'),
 ]
